@@ -7,27 +7,65 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <section id="landing">
-      <nav>
-        <div class="row">
-          <div class="nav__container">
-            <div class="nav__logo--wrapper">
-              <figure class="nav__img--wrapper">
-                <img src="./assets/TreactLogo.svg" class="nav__img" alt="" />
-              </figure>
-              <h1><a href="" class="logo__title">Treact</a></h1>
+    <div class="page__container">
+      <section id="landing">
+        <nav>
+          <div class="row">
+            <div class="nav__container">
+              <a href="" class="logo__title">
+                <div class="nav__logo--wrapper">
+                  <figure class="nav__img--wrapper">
+                    <img
+                      src="./assets/TreactLogo.svg"
+                      class="nav__img"
+                      alt=""
+                    />
+                  </figure>
+                  <h1>Treact</h1>
+                </div>
+              </a>
+              <ul class="nav__links">
+                <li><a href="" class="nav__link">About</a></li>
+                <li><a href="" class="nav__link">Blog</a></li>
+                <li><a href="" class="nav__link">Pricing</a></li>
+                <li><a href="" class="nav__link">Contact Us</a></li>
+                <li><a href="" class="nav__link nav__link--login">Login</a></li>
+                <li><a href="" class="nav__link--primary">Sign-Up</a></li>
+              </ul>
             </div>
-            <ul class="nav__links">
-              <li><a href="" class="nav__link">About</a></li>
-              <li><a href="" class="nav__link">Blog</a></li>
-              <li><a href="" class="nav__link">Pricing</a></li>
-              <li><a href="" class="nav__link">Contact Us</a></li>
-              <li><a href="" class="nav__link nav__link--login">Login</a></li>
-              <li><a href="" class="nav__link--primary">Sign-Up</a></li>
-            </ul>
           </div>
-        </div>
-      </nav>
-    </section>
+          <header>
+            <div class="row">
+              <div class="header__container">
+                <div class="header__description">
+                  <h1 class="header__description--title">
+                    Beautiful React Templates
+                    <span class="purple">for you.</span>
+                  </h1>
+                  <p class="header__description--para">
+                    Our templates are easy to setup, understand and customize.
+                    Fully modular components with a variety of pages and
+                    components.
+                  </p>
+                  <div class="header__description--bar">
+                    <input class="header__description--input" type="email" placeholder="Your E-mail Address" />
+                    <button class="header__description--button">
+                      Get Started
+                    </button>
+                  </div>
+                  <div class="header__description--customers">
+                    <p class="customers__para">OUR TRUSTED CUSTOMERS</p>
+                    <img class="customers__logo" src="./assets/CustomersLogo.png" alt="" />
+                  </div>
+                </div>
+                <figure class="header__img--wrapper">
+                  <img src="./assets/worklanding.svg" alt="" />
+                </figure>
+              </div>
+            </div>
+          </header>
+        </nav>
+      </section>
+    </div>
   </body>
 </html>
