@@ -24,6 +24,15 @@ a {
     color: #243e63;
 }
 
+h4 {
+    font-size: 24px;
+    color: #243e63;
+}
+
+p {
+    line-height: 1.5;
+}
+
 img {
     width: 100%;
 }
@@ -125,6 +134,8 @@ nav {
 
 .header__description {
     width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header__description--title {
@@ -199,15 +210,75 @@ nav {
 .customers__para {
     font-size: 12px;
     font-weight: bold;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .customers__logo {
     padding: 0 64px 0 0;
     margin: 16px 0 0 0;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .header__img--wrapper {
     width: 60%;
+}
+
+/*
+
+FEATURES
+
+*/
+
+.features__container {
+    padding: 80px 0;
+}
+
+.features__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.features__title--subtitle {
+    font-size: 16px;
+    margin: 0 0 16px;
+}
+
+.features__title--main {
+    font-size: 48px;
+    color: #243e63;
+    font-weight: bold;
+}
+
+.features__title--para {
+    margin: 16px 0 0;
+    font-size: 18px;
+    color: #7c8ba1;
+}
+
+.services {
+    display: flex;
+    width: calc(100% / 3);
+}
+
+.service {
+    display: flex;
+}
+
+.service__description {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 0 16px;
+}
+
+.service__img--wrapper {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #243e63;
+    border-radius: 9999px;
+}
+
+.service__img{
+    width: 24px;
 }
