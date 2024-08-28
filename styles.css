@@ -258,27 +258,15 @@ FEATURES
 
 .services {
     display: flex;
-    width: calc(100% / 3);
+    flex-wrap: wrap;
 }
 
 .service {
     display: flex;
+    width: calc(100% / 3);
 }
 
 .service__description {
     display: flex;
     flex-direction: column;
-    margin: 8px 0 0 16px;
-}
-
-.service__img--wrapper {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #243e63;
-    border-radius: 9999px;
-}
-
-.service__img{
-    width: 24px;
 }
