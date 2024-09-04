@@ -86,6 +86,7 @@ h2 {
 
 h3 {
     font-size: 20px;
+    letter-spacing: 1px;
 }
 
 h4 {
@@ -308,7 +309,6 @@ FEATURES
 
 .features__title--para {
     text-align: center;
-    font-weight: bold;
     max-width: 500px;
     margin: 16px 0 40px;
     font-size: 18px;
@@ -321,6 +321,7 @@ FEATURES
 }
 
 .service__container {
+    display: flex;
     width: calc(100% / 3);
 }
 
@@ -347,7 +348,8 @@ FEATURES
 
 .service__description {
     margin: 8px 0 0 16px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .service__description--para {
@@ -478,4 +480,198 @@ VALUES MAIN
 
 .values__img {
     width: 100%;
+}
+
+/*
+
+PRICE
+
+*/
+
+.price__row--column {
+    padding: 90px 0;
+}
+
+.price__text--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.price__title--para {
+    text-align: center;
+    max-width: 500px;
+    margin: 16px 0 40px;
+    font-size: 18px;
+    color: #7c8ba1;
+}
+
+.plans {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.plan {
+    position: relative;
+    padding: 8px 32px 0;
+    margin: 64px 32px 0 0;
+    border-radius: 0.5rem;
+    --tw-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06); 
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);;
+}
+
+.plan__highlight {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__type {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan__type--price {
+    color: black;
+    margin: 4px 0;
+}
+
+.plan__type--time {
+    font-size: 16px;
+    color: #A0AAC0;
+    letter-spacing: 1px;
+}
+
+.plan__details {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 32px;
+    border-style: solid;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-color:rgb(226, 232, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan__details--features {
+    margin-top: 20px;
+    color: #718096;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.plan__buy {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan__button {
+    padding: 16px 32px;
+    margin: 0;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217));
+}
+
+.plan__button:hover {
+    transform: translateY(-1.5px) translateX(1.5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.middleblue {
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.middletext {
+    color: white;
+    border-color: rgb(102 126 234);
+}
+
+.middlebutton {
+    color: #6415ff;
+    background: white;
+}
+
+.middlebutton:hover {
+    color: #591dd1;
+    background: rgb(241, 241, 241);
+}
+
+.thirdhighlight {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.thirdbutton {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+/*
+
+TESTIMONIALS
+
+*/
+
+.testimonials__container {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials__description {
+    padding-left: 48px;
+}
+
+.testimonials__rating {
+    margin-top: 40px;
+    font-size: 20px;
+    color: rgb(246, 173, 85);
+}
+
+.testimonials__title {
+    margin-top: 16px;
+}
+
+.testimonials__title--text {
+    font-size: 20px;
+}
+
+.testimonials__para {
+    margin: 16px 0 40px 0;
+}
+
+.testimonial__person {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__person--img {
+    width: 80px;
+    border-radius: 9999px;
+}
+
+.testimonial__person--description {
+    margin-left: 24px;
+}
+
+.testimonial__person--name {
+    font-size: 20px;
+}
+
+.testimonial__person--jobtitle {
+    color: #7c8ba1;
 }
