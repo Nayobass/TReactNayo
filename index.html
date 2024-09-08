@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/5014c86bf5.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="page__container">
@@ -36,7 +37,21 @@
                 <li><a href="" class="nav__link nav__link--login">Login</a></li>
                 <li><a href="" class="nav__link--primary">Sign-Up</a></li>
               </ul>
+              <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
             </div>
+          </div>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <a class="menu__link" onclick="closeMenu()" href="">About</a>
+            <a class="menu__link" onclick="closeMenu()" href="">Blog</a>
+            <a class="menu__link" onclick="closeMenu()" href="">Pricing</a>
+            <a class="menu__link" onclick="closeMenu()"  href="">Contact Us</a>
+            <a class="menu__link" onclick="closeMenu()" href="">Login</a>
+            <button class="menu__button" onclick="closeMenu()">Sign Up</button>
           </div>
         </nav>
         <header>
@@ -399,7 +414,7 @@
                   <span class="plan__details--features">Basic Assistance</span>
                 </div>
                 <div class="plan__buy">
-                  <button class="plan__button">Buy Now</button>
+                  <button class="main__button plan__button">Buy Now</button>
                 </div>
               </div>
               <div class="plan middleblue">
@@ -661,13 +676,137 @@
           </div>
         </section>
         <section id="getstarted">
-            <div class="row">
-                <div class="getstarted__container">
-                    <h1 class="getstarted__main--text">Developers all over the world are happily using Treact</h1>
-                </div>
+          <div class="row">
+            <div class="getstarted__container">
+              <h1 class="getstarted__main--text">
+                Developers all over the world are happily using Treact.
+              </h1>
+              <div class="getstarted__buttons">
+                <button class="getstarted__button--main">Get Started</button>
+                <button class="getstarted__button--contact">Contact Us</button>
+              </div>
             </div>
+          </div>
         </section>
       </main>
     </div>
+    <footer>
+      <div class="row footer__row">
+        <div class="links">
+          <div class="link">
+            <h3 class="link__main">MAIN</h3>
+            <ul class="link__list">
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Blog</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">FAQs</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Support</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">About Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="link">
+            <h3 class="link__main">PRODUCT</h3>
+            <ul class="link__list">
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Log In</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Personal</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Business</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Team</a>
+              </li>
+            </ul>
+          </div>
+          <div class="link">
+            <h3 class="link__main">PRESS</h3>
+            <ul class="link__list">
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Logos</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Events</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Stories</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Office</a>
+              </li>
+            </ul>
+          </div>
+          <div class="link">
+            <h3 class="link__main">TEAM</h3>
+            <ul class="link__list">
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Career</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Founders</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Culture</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Onboarding</a>
+              </li>
+            </ul>
+          </div>
+          <div class="link">
+            <h3 class="link__main">LEGAL</h3>
+            <ul class="link__list">
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">GDPR</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Privacy Policy</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Terms of Service</a>
+              </li>
+              <li class="link__item--wrapper">
+                <a class="link__item" href="">Disclaimer</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__info">
+          <div class="footer__logo--wrapper">
+            <figure class="footer__img--wrapper">
+              <img
+                src="./assets/TreactLogoLight.svg"
+                class="footer__logo--img"
+                alt=""
+              />
+            </figure>
+            <h1 class="footer__logo--text">Treact Inc.</h1>
+          </div>
+          <p class="footer__info--para">
+            &copy; 2018 Treact Inc. All Rights Reserved.
+          </p>
+          <div class="footer__socials">
+            <a class="footer__social" href="https://facebook.com"
+              ><i class="fa-brands fa-facebook-f social__link"></i
+            ></a>
+            <a class="footer__social" href="https://twitter.com"
+              ><i class="fa-brands fa-twitter social__link"></i
+            ></a>
+            <a class="footer__social youtube" href="https://youtube.com"
+              ><i class="fa-brands fa-youtube social__link"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
