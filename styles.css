@@ -873,6 +873,7 @@ footer {
     width: 100%;
     margin-top: 48px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -1236,5 +1237,15 @@ footer {
 
     .footer__info--para {
         margin-bottom: 16px;
+    }
+}
+
+@media {
+    .main__img .steps__img--wrapper .steps__text .header__img--wrapper .header__description .maincontainer__description--container {
+        width: 100%;
+    }
+
+    .testimonials__container .maincontainer .steps__container .header__container {
+        flex-wrap: wrap;
     }
 }
